@@ -68,3 +68,14 @@ The "Rubyist way" of making links:
         Contain the link in <%= %>
         <%= link_to ["message in quotation"], [path_name_followed_by_"_path"] %>
         path name can be located through "rake routes" in terminal
+
+
+Following this tutorial once I started using Heroku:
+    https://devcenter.heroku.com/articles/getting-started-with-rails5
+
+
+Some Rails console commands
+    User.first, second, third, last
+    User.find([user_id)
+    [username] = User.find(user_id) : assign id
+    reload! : reloads w/ whatever changes made
