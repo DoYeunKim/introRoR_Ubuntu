@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "layouts/nav" %>
+    <%= bootstrap_flash %>
+    <div class="container_fluid">     
+      <%= yield %>
+    </div>
+
+    <%= render "layouts/foot" %>
   </body>
 </html>

@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.container_fluid {
+    padding-top: 50px;
+    padding-left: 50px;
+}

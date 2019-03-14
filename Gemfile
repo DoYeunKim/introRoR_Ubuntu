@@ -16,6 +16,19 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+# JQuery for rails, required to use Bootstrap
+gem 'jquery-rails'
+# Bootstrap for styling
+gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+# Provides extra features for bootstrap sass
+gem 'bootstrap-sass-extras'
+# Provides authentication
+gem 'devise', '~> 4.6', '>= 4.6.1'
+# Makes the forms simple
+gem 'simple_form'
+# Import icons
+gem 'font-awesome-sass', '~> 5.6.1'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

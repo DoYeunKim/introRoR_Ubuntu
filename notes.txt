@@ -1,0 +1,70 @@
+    Create
+    Read
+    Update
+    Delete
+
+MVC
+    Model <-> Controller <-> View
+
+Data Types
+    String: <= 255 char
+    Text: unlimited length
+    Integer: integer
+    Float: decimal @ floating point precision
+    Decimal: "better for math"
+    Boolean: bool
+    Binary: images, movies, etc in raw format in chunks of data (blobs)
+    :primary_key: user ID
+    Date: date
+    Time: time
+    DateTime: both
+    Timestamp: date & time, course of time
+
+    ** should use more frequently accessed and informative data for indexing
+    
+
+Fire up page: rails server
+
+W/ generate command
+    Controllers: the subsequent term must be plural
+        e.g. rails generate controller pages
+
+# =begin ... =end needs to start at the beginning of the line
+=begin 
+  In route, the following alternative would redirect ~/hello with contact page
+  get 'hello' to: 'pages#contact'
+=end 
+
+How to install bootstrap sass:
+    https://github.com/twbs/bootstrap-rubygem
+    I may later want to change //=require bootstrap-sprockets to //=require bootstrap in the future
+        "While bootstrap-sprockets provides individual Bootstrap components for ease of debugging, 
+            you may alternatively require the concatenated bootstrap for faster compilation:"
+
+
+In layouts, .html.erb files that start w/ "_" is a partial.
+These contain snippets of html codes that can be called by <%= render "layouts/[filename_w/o_"_"_and_extension]" %>
+
+How to install bootstrap sass extras:
+    https://github.com/doabit/bootstrap-sass-extras
+
+How to install devise (authentication):
+    https://github.com/plataformatec/devise
+
+How to install simple form (simplifies forms):
+    https://github.com/plataformatec/simple_form
+    
+
+How to install font awesome
+    https://github.com/FortAwesome/font-awesome-sass
+
+
+Using Rails console
+    open console: rails console
+    Tap on to model: <Model> (may require <Model>.connection first)
+
+The "Rubyist way" of making links:
+    <li><%= link_to "Sign Up", new_user_registration_path %></li>
+        Contain the link in <%= %>
+        <%= link_to ["message in quotation"], [path_name_followed_by_"_path"] %>
+        path name can be located through "rake routes" in terminal
