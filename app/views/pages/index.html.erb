@@ -150,9 +150,10 @@
         <div class="well">
             <h4>Recent Posts</h4>
             <!-- Post the body of the last article posted -->
-            <% @articles.each do |article| %>
-                <strong> <%= link_to article.title, article %> </strong>
-                <p> <%= truncate(article.body) %> </p>
+            <% @articles.each do |art| %>
+                Created by: <%= art.user.username %><br />
+                <strong> <%= link_to art.title, art %> </strong>
+                <p> <%= truncate(art.body) %> </p>
             <% end %>
         </div>
     </div>
