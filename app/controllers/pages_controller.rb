@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @articles = Article.count >= 2 ? Article.last(2) : Article.all
+    @articles = Article.all
   end
 
   def about
