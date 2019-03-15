@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { registrations: "registrations" }
   # All resources are set up in articles for scaffold
   resources :articles
+  resources :contacts
   root to: 'pages#index'
   get 'pages/about'
   get 'pages/contact'
