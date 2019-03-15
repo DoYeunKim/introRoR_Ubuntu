@@ -16,6 +16,7 @@
                 <%= link_to "Contact Us", pages_contact_path, class: "nav-link" %>
             </li>
 
+            <li class="nav-item"> <%= link_to "Create an Article", new_article_path, class: "nav-link" %> </li>
            
             <!-- If no-one is signed in, then display Sign Up and Sign In -->
             <!-- current_user is supported by devise -->
@@ -26,7 +27,6 @@
             <li class="nav-item">
                 <%= link_to "Sign In", new_user_session_path, class: "nav-link" unless current_user %>
             </li>
-            <li class="nav-item"> <%= link_to "Create an Article", new_article_path, class: "nav-link" %> </li>
         </ul>
 
         <% if current_user %>
