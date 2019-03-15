@@ -96,3 +96,33 @@ Adding new columns to db users:
 scaffolds are used for articles
     rails generate scaffold Article title:string body:text
 
+
+rails generate commands:
+
+Controller Plural
+rails g controller Users index show
+
+Helper Plural
+rails g helper Users
+
+Mailer Singular
+rails g mailer UserMailer
+
+Migration Plural
+rails g migration AddEmailToUsers email:string
+
+Model Singular
+rails g model User name:string
+
+Observer Singular
+rails g observer User
+
+Resource Plural*
+resources :users, :only => [:index, :show]
+
+Scaffold Singular
+rails g scaffold User name:string
+
+Table Plural
+SELECT * FROM users;
+
