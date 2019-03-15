@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   # Devise will go into customized registrations controllers first to deal with registration
   devise_for :users, :controllers => { registrations: "registrations" }
   # All resources are set up in articles for scaffold
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
   resources :contacts
   root to: 'pages#index'
   get 'pages/about'
