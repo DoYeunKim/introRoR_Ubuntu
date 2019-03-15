@@ -79,3 +79,15 @@ Some Rails console commands
     User.find([user_id)
     [username] = User.find(user_id) : assign id
     reload! : reloads w/ whatever changes made
+
+
+To use blocks/operations:
+    e.g. <% if %> ... <% else %> ... <% end %>
+
+
+Adding new columns to db users:
+    rails g migration add_columns_to_users admin:boolean firstname:string lastname:string
+    rails [g/generate] migration add_columns_to_users [column_name:data_type]
+
+    Can check this under db/migrate
+    then use rake db:migrate to add to schema.rb
