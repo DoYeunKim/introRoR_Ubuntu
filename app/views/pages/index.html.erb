@@ -148,9 +148,12 @@
 
         <!-- Side Widget Well --> 
         <div class="well">
-            <h4>Side Widget Well</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci
-        accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+            <h4>Recent Posts</h4>
+            <!-- Post the body of the last article posted -->
+            <% @articles.each do |article| %>
+                <strong> <%= link_to article.title, article %> </strong>
+                <p> <%= truncate(article.body) %> </p>
+            <% end %>
         </div>
     </div>
 </div>
