@@ -29,6 +29,9 @@ gem 'simple_form'
 # Import icons
 gem 'font-awesome-sass', '~> 5.6.1'
 
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'will_paginate-bootstrap4'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

@@ -4,7 +4,6 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    
 
 
     <div class="collapse navbar-collapse" id="navbarColor01">
@@ -16,7 +15,7 @@
                 <%= link_to "Contact Us", pages_contact_path, class: "nav-link" %>
             </li>
 
-            <li class="nav-item"> <%= link_to "Create an Article", new_article_path, class: "nav-link" %> </li>
+            <li class="nav-item"> <%= link_to "View Articles", articles_path, class: "nav-link" %> </li>
            
             <!-- If no-one is signed in, then display Sign Up and Sign In -->
             <!-- current_user is supported by devise -->
