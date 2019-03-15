@@ -91,3 +91,7 @@ Adding new columns to db users:
 
     Can check this under db/migrate
     then use rake db:migrate to add to schema.rb
+
+
+scaffolds are used for articles
+    rails generate scaffold Article title:string body:text
